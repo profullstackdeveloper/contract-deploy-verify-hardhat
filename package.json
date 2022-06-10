@@ -1,0 +1,25 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.8"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security"
+  },
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.js",
+    "deploy:rinkeby": "npx hardhat run --network rinkeby scripts/deploy.js",
+    "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.js",
+    "verifyContract:ropsten": "npx hardhat verifycontract --network ropsten --show-stack-traces",
+    "verifyContract:rinkeby": "npx hardhat verifycontract --network rinkeby --show-stack-traces",
+    "verifyContract:goerli": "npx hardhat verifycontract --network goerli --show-stack-traces"
+  }
+}
