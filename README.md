@@ -1,15 +1,34 @@
-# Basic Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
+
+```
+# Deploy Contract
+
+To deploy contract use this script:
+
+## Deploy on Ropsten Testnet:
+``npm run deploy:ropsten``
+
+## Deploy on Goerli Testnet:
+``npm run deploy:goerli``
+
+## Deploy on Rinkeby Testnet:
+``npm run deploy:rinkeby``
+```
+
+```
+# Verify Contracts
+
+To verify contract of which is deployed on network:
+
+## Verify contract on Ropsten Testnet:
+``npm run verifyContract:ropsten``
+## Verify contract on Goerli Testnet:
+``npm run verifyContract:goerli``
+## Verify contract on Rinkeby Testnet:
+``npm run verifyContract:rinkeby``
+```
+
+```
+# Clean cache and artifacts
+
+``npm run clean``
